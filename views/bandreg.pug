@@ -1,0 +1,83 @@
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet' href='/css/forms.css')
+h3 Band Registration Form
+form#Bandform(action='' method ='POST' name='bandForm')
+li
+  label(for='bdname') Band Name:
+li
+  input#frm-inner-style(type='text' name='BandName' size='45')
+li
+  label(for='bdid') BandID:
+li
+  input#frm-inner-style(type='text' name='BandId' size='45')
+li
+  label(for='') Band Password:
+li
+  input#frm-inner-style(type='text' name='passid' size='45')
+li
+  label(for='BandSlogan') Band Slogan:
+li
+  input#frm-inner-style(type='text' name='BandSlogan' size='60')
+li
+  label(for='BandOwner') Band Owner(s):
+li
+  input#frm-inner-style(type='text' name='BandOwner' size='45')
+li
+  label(for='BandHome') Band Home:
+li
+  input#frm-inner-style(type='text' name='BandHome' size='45')
+li
+  label(for='members') Number of members:
+li
+  input#frm-inner-style(type='text' name='members')
+li
+  label(for='Bandemail')  Band Email :
+li
+  input#frm-inner-style(type='text' name='Bandemail' size='45')
+li
+  label Band Contact:
+li
+  input#frm-inner-style(type='tel' name='BandContact')
+li
+  label Profile Photo:
+li
+  input#image(type='file' name='profile_photo' placeholder='Select a Photo' required='' capture='')
+li
+  label Band Icon:
+li
+  input#image(type='file' name='profile_photo' placeholder='Select a Photo' required='' capture='')
+li
+  label Date of formation:
+li
+  input#frm-inner-style(type='date' name='DateOfFormation')
+li
+  label(for='Music category') Music Category:
+li
+  select#frm-inner-style(name='musicCategory')
+    option(selected='' value='Default')
+    option(value='Kadongo') Kadongo Kamu
+    option(value='DH') Dance Hall
+    option(value='Rg') Raggae
+    option(value='Gospel') Gospel
+    option(value='AH') Afro-House
+    option(value='kidandali') kidandali
+li
+  label Specify if any other:
+li
+input#frm-inner-style(type='text' name='SpecifyCategory')
+li
+  label Number of Albums:
+li
+  input#frm-inner-style(type='text' name='NumberOfAlbums')
+li
+  label(for='descript') Band Desciption :
+li
+  textarea#frm-inner-style(name='descrip')
+li
+  input(type='button' name='submitbtn' value='Submit')
+  input(type='reset' name='reset' value='Reset ')

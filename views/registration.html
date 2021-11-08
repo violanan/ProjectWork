@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Registration</h3>
+    <form name="register" id="form">
+        <ul>
+            <form action=""></form>
+            <li><label for="userid">Stage Name:</label></li>
+            <li><input type="text" name="userid" size="12" /></li>
+
+            <li><label for="useremail">Email :</label></li>
+            <li><input type="text" name="email" size="15" /></li>
+
+            <li><label for="passid">Password:</label></li>
+            <li><input type="password" name="userpass" size="12" /></li>
+
+            <li><label for="username">User Name:</label></li>
+            <li><input type="text" name="username" size="45" /></li>
+
+            <li>
+                <label for="usergender">Gender :</label>
+                <input type="radio" id="msex" name="sex" value="male" /><span>Male</span
+          >
+
+          <input type="radio" id="fsex" name="sex" value="female" /><span
+            >Female</span
+          >
+          <small id="genderError"></small>
+        </li>
+
+
+            <li><label for="useraddress">Address:</label></li>
+            <li><input type="text" name="address" size="12" /></li>
+
+            <li><label for="artist">Performing Artist:</label></li>
+            <li>
+                <select name="artist" id="artist">
+            <option selected="" value="Default">
+              Please select artist-type:
+            </option>
+            <option value="Solo">Solo Artist</option>
+            <option value="bnd">Band</option>
+            <option value="com">Comedian</option>
+            
+          </select>
+                <!-- <span id="countryError"></span> -->
+            </li>
+            <input type="button" name="submitbtn" value="Submit" />
+            <input type="reset" name="reset" value="Reset " />
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>

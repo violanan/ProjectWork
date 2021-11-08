@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/forms.css" />
+</head>
+
+<body>
+    <h3>Performing Artists Registration Form</h3>
+
+    <form action="" id="ArtistRegform"></form>
+    <ul>
+        <li><label for="Performers">Performing Artist:</label></li>
+        <li>
+            <select name="Category" id="frm-inner-style">
+                <option selected="" value="Default">
+                </option>
+                <option value="Commedy">Comedian</option>
+                <option value="D-C">Dcumentary Creator</option>
+                <option value="Drama">Dramatist</option>
+                
+              </select></li>
+
+        <li><label for="stagename" id="StageNameID">Stage Name:</label></li>
+        <li><input type="text" name="StageName" size="45" id="frm-inner-style" /></li>
+        <small></small>
+
+        <li><label>ArtistID:</label></li>
+        <li><input type="text" name="ArtId" size="45" id="frm-inner-style" /></li>
+
+        <li><label>Password:</label></li>
+        <li><input type="text" name="passid" size="45" id="frm-inner-style" /></li>
+
+        <li><label>Date of Birth:</label></li>
+        <li><input type="date" name="DateOfBirth" id="frm-inner-style" /></li>
+
+        <li><label>First Name:</label></li>
+        <li><input type="text" name="FirstName" size="45" id="frm-inner-style" /></li>
+
+        <li><label>Last Name:</label></li>
+        <li><input type="text" name="LastName" size="45" id="frm-inner-style" /></li>
+
+        <li><label>NIN Number:</label></li>
+        <li><input type="text" name="NIN" id="frm-inner-style" /></li>
+
+        <li><label>Profile Photo:</label></li>
+        <li><input id="image" type="file" name="profile_photo" placeholder="Select a Photo" required="" capture></li>
+
+        <li>
+            <label for="usergender">Gender :</label><br/>
+            <input type="radio" id="msex" name="sex" value="male" /><span>Male</span
+  ><br/>
+
+  <input type="radio" id="fsex" name="sex" value="female" /><span
+    >Female</span
+  >
+  <small id="genderError"></small>
+</li>
+          
+    <li><label for="Artist location">Location:</label></li>
+    <li><input type="text" name="location" id="frm-inner-style" /></li>
+
+    <li><label for="emailAddress"> Email Address:</label></li>
+    <li><input type="text" name="Artistemail" size="45" id="frm-inner-style" /></li>
+
+    <li><label>Phone Number:</label></li>
+    <li><input type="tel" name="Contact" id="frm-inner-style" /></li>
+
+    <li><label>Mangement:</label></li>
+    
+    <li><input type="checkbox"  name="management1" value="Label">
+    <label > Under a management company</label><br></li>
+    <li><input type="checkbox"  name="management2" value="Manager">
+    <label > I have a manager</label><br></li>
+    <li><input type="checkbox"  name="management3" value="None">
+    <label > i am self managing</label><br></li>
+
+    <li><label>Label/Manager's Name:</label></li>
+    <li><input type="text" name="Manager" id="frm-inner-style" /></li>
+
+    <li><label>Date of Start:</label></li>
+    <li><input type="date" name="DateOfStart" id="frm-inner-style" /></li>
+    
+
+    <li><label>Number of works:</label></li>
+    <li><input type="text" name="NumberOfskits" id="frm-inner-style" /></li>
+
+    <li><label>Awards if any:</label></li>
+    <li><input type="text" name="NumberOfAwards" id="frm-inner-style" /></li>
+    
+    <li><label for="descript">Desciption :</label></li>
+    <li><textarea name="descrip" id="frm-inner-style"></textarea></li>
+
+    <li>
+        <input type="button" name="submitbtn" value="Submit" />
+        <input type="reset" name="reset" value="Reset " />
+    </li>
+</ul>
+
+    </form>
+</body>
+
+</html>
+</html>
