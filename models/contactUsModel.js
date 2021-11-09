@@ -18,5 +18,5 @@ const contactUsSchema = new mongoose.Schema({
         trim: true,
     },
 });
-module.exports = mongoose.model('ContactUs Collection', contactUsSchema);
+module.exports = mongoose.model('ContactUs', contactUsSchema);
 // module.exports = Mongoose.model('ContactUs', contactUs);

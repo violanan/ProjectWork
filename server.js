@@ -15,7 +15,7 @@ const registerArtistRoutes = require('./models/soloArtistModel');
 
 //instatations
 const app = express();
-const port = 4030;
+const port = 3030;
 
 mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
@@ -40,12 +40,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/public/images', express.static((__dirname, 'images')));
 
-
 //routes(all pages should have routes)
 //routes for dynamic pages
-app.use('/registerArtist', registerArtistRoutes);
+// app.use('/registerArtist', registerArtistRoutes);
 app.use('/', contactRoute);
-app.use('/', soloRoute);
+app.use('/', soloRoute); // /registerArtist/SoloArtists
 app.use('/', performerRoute);
 app.use('/', bandRegRoute);
 

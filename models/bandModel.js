@@ -38,6 +38,10 @@ const bandSchema = new mongoose.Schema({
         type: String,
         trim: true,
     },
+    icon: {
+        type: String,
+        trim: true,
+    },
     DateOfFormation: {
         type: String,
         trim: true,
@@ -63,4 +67,4 @@ const bandSchema = new mongoose.Schema({
         trim: true,
     },
 });
-module.exports = mongoose.model('BandsReg', bandSchema);
+module.exports = mongoose.model('Bandsregn', bandSchema);

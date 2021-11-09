@@ -9,7 +9,7 @@ const soloArtistSchema = new mongoose.Schema({
         type: String,
         trim: true,
     },
-    passid: {
+    pass: {
         type: String,
         trim: true,
         // unique: true; for registration
@@ -46,11 +46,12 @@ const soloArtistSchema = new mongoose.Schema({
         type: String,
         trim: true,
     },
-    Manager: {
+    manager: {
         type: String,
         trim: true,
     },
-    Artistemail: {
+
+    Management: {
         type: String,
         trim: true,
     },
@@ -63,6 +64,10 @@ const soloArtistSchema = new mongoose.Schema({
         trim: true,
     },
     musicCategory: {
+        type: String,
+        trim: true,
+    },
+    SpecifyCategory: {
         type: String,
         trim: true,
     },
@@ -83,7 +88,4 @@ const soloArtistSchema = new mongoose.Schema({
         trim: true,
     },
 });
-module.exports = mongoose.model(
-    'ArtistsRegistration Collection',
-    soloArtistSchema
-);
+module.exports = mongoose.model('Artistsregistration', soloArtistSchema);
