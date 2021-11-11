@@ -1,0 +1,80 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title UGAAMUX
+    link(rel='stylesheet' href='/css/bootstrap.min.css')
+    link(rel='stylesheet' href='/public/css/styles.css')
+  body
+    div
+      h1.header
+        b UGAAMUX
+        img(src='/images/flag-round.png' width='32px' height='28px')
+      p#welcome-Home
+        b Welcome to the home of Ugandan Art
+    #nav-bar
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='Solo') Solo Artists
+        li
+          a(href='Bands') Bands
+        li
+          a(href='AboutUs') About Us
+        li
+          a(href='Performers') Performing Artists
+        li
+          a(href='ContactUs') Contact Us
+    #contactUsCont
+      p#para1
+        b The home of Ugandan Entertainment
+      br
+      img(src='public/images/fewartists.jpg')
+      p
+        b Located:
+        br
+        | Namungoona National Housing
+      p
+        b  Email Us:
+        br
+        | ugamax@gmail.com
+        br
+        | or visit our website on www.ugamux.ug.org
+        br
+        b Contacts:
+        br
+        | +414-784-265-112
+        br
+        | +256-784-080-18
+        br
+        | +256-701-555-018
+        br
+      h4
+        b Message us
+      form(action='/form' method ='POST' name='form')
+        li
+          label(for='username')  Name:
+          input(type='text' name='username')
+        li
+          label(for='useremail') Email :
+        li
+          input(type='text' name='email' size='15')
+        li
+          label(for='descript') Message :
+        li
+          textarea(name='descrip')
+        br
+        br
+        li
+          input(type='button' name='submitbtn' value='Submit')
+          input(type='reset' name='reset' value='Reset ')
+    //
+      <div class="footer">
+      <p>
+      The best platiform for all Ugandan Entertainment content, We have you covered!
+      <br /> Email Us On: ugamax@gmail.com<br /> or visit our website on www.ugamux.ug.org
+      </p>
+      </div>
+    script(src='/js/bootstrap.js.map')

@@ -18,10 +18,6 @@ const performingSchema = new mongoose.Schema({
         trim: true,
         // unique: true; for registration
     },
-    email: {
-        type: String,
-        trim: true,
-    },
     DateOfBirth: {
         type: String,
         trim: true,
@@ -47,6 +43,10 @@ const performingSchema = new mongoose.Schema({
         trim: true,
     },
     location: {
+        type: String,
+        trim: true,
+    },
+    Management: {
         type: String,
         trim: true,
     },

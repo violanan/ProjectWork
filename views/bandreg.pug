@@ -5,33 +5,33 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title document 
     link(rel='stylesheet' href='/css/forms.css')
-  body
-    h3 Band Registration Form
+  body#bandbody
+    h2 Band Registration Form
     form#Bandform(action='/BandsRegistration' method ='POST' name='bandForm')
       li
         label(for='bdname') Band Name:
       li
-        input#frm-inner-style(type='text' name='BandName' size='45')
+        input#frm-inner-style(type='text' name='BandName')
       li
         label(for='bdid') BandID:
       li
-        input#frm-inner-style(type='text' name='BandId' size='45')
+        input#frm-inner-style(type='text' name='BandId')
       li
         label(for='') Band Password:
       li
-        input#frm-inner-style(type='text' name='passid' size='45')
+        input#frm-inner-style(type='text' name='passid')
       li
         label(for='BandSlogan') Band Slogan:
       li
-        input#frm-inner-style(type='text' name='BandSlogan' size='60')
+        input#frm-inner-style(type='text' name='BandSlogan')
       li
         label(for='BandOwner') Band Owner(s):
       li
-        input#frm-inner-style(type='text' name='BandOwner' size='45')
+        input#frm-inner-style(type='text' name='BandOwner')
       li
         label(for='BandHome') Band Home:
       li
-        input#frm-inner-style(type='text' name='BandHome' size='45')
+        input#frm-inner-style(type='text' name='BandHome' )
       li
         label(for='members') Number of members:
       li
@@ -39,7 +39,7 @@ html(lang='en')
       li
         label(for='Bandemail')  Band Email :
       li
-        input#frm-inner-style(type='text' name='Bandemail' size='45')
+        input#frm-inner-style(type='text' name='Bandemail')
       li
         label Band Contact:
       li
@@ -80,5 +80,5 @@ html(lang='en')
       li
         textarea#frm-inner-style(name='descrip')
       li
-        input(type='button' value='Submit')
+        input(type='submit' name='submitbtn')
         input(type='reset' name='reset' value='Reset ')

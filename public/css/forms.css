@@ -1,11 +1,14 @@
 * {
     padding: 10px;
     margin: auto;
-    background-color: rgb(226, 168, 43);
+    box-sizing: border-box;
+    /* font-size: large;
+    font-weight: bolder; */
+    /* background-color: rgb(226, 168, 43); */
 }
 
 form {
-    /* background-color: white; */
+    background-color: white;
     width: 300px;
     margin: auto;
 }
@@ -21,6 +24,64 @@ li {
     padding-top: 3px;
 }
 
+#artistbody {
+    width: 80%;
+    background-image: url(/public/images/bg-artist.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #ArtistRegform {
     background-color: cornflowerblue;
+    width: 40%;
+}
+
+#bandbody {
+    width: 80%;
+    border-radius: 40%;
+    background-image: url(/public/images/bg-guitre.jpg);
+}
+
+#Bandform {
+    background-color: rgb(226, 168, 43);
+    width: 40%;
+}
+
+#perfbody {
+    background-image: url(/public/images/backgroond.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#peformingRegform {
+    background-color: blueviolet;
+    width: 40%;
+}
+
+
+/* styling my registration pages */
+
+#form-bg {
+    background-color: rgb(77, 58, 58);
+    width: 350px;
+    margin: auto;
+}
+
+#form-style {
+    width: 280px;
+    height: 70px;
+    background-color: rgb(223, 223, 231);
+    border: 0.5pt solid rgb(223, 2, 231);
+    margin: 2px;
+}
+
+#form-style-inner {
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border-right: none;
+    border-top: none;
+    border-left: 1px solid black;
+    border-bottom: none;
 }

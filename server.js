@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 
 const mongoose = require('mongoose');
+// const expressSession = require
+
 require('dotenv').config();
 
 const contactRoute = require('./routes/contactRoute');
@@ -11,11 +13,11 @@ const performerRoute = require('./routes/performerRoute');
 const bandRegRoute = require('./routes/bandRegRoute');
 
 // const ContactUs = require('./models/contactUsModel');
-const registerArtistRoutes = require('./models/soloArtistModel');
+const Artistsregistration = require('./models/soloArtistModel');
 
 //instatations
 const app = express();
-const port = 3030;
+const port = 3050;
 
 mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
@@ -38,7 +40,7 @@ app.set('view engine', 'pug');
 //middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/public/images', express.static((__dirname, 'images')));
+app.use('/public/new_images', express.static(__dirname + '/public/new_images'));
 
 //routes(all pages should have routes)
 //routes for dynamic pages

@@ -26,7 +26,7 @@ var upload = multer({ storage: storage })
 router.post('/Solo', upload.single('profile_photo'), async(req, res) => {
     console.log(req, body);
     try {
-        const soloReg = new soloReg(req, body);
+        const soloReg = new soloReg(req.body);
         ArtistsReg.profile_photo = req.file.path
         await soloReg.save();
         res.redirect('/registerArtist/Solo');

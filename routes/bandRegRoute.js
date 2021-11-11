@@ -9,12 +9,32 @@ router.get('/BandsRegistration', (req, res) => {
     res.render('bandreg');
 });
 
-//route to post the data from the solo artist form page
-router.post('/BandsRegistration', (req, res) => {
-    console.log(req.body);
-    res.render('bandReg');
-    const bandValue = new Bandsregn(req.body);
-    bandValue.save();
+//route to post the data from the band form page
+router.post('/BandsRegistration', async(req, res) => {
+    try {
+        const bandsReg = new Bandsregn(req.body);
+        console.log(req.body);
+        // ArtistsReg.profile_photo = req.file.path
+        await bandsReg.save();
+        res.redirect('/');
+    } catch (err) {
+        res.status(400).send('something went wrong');
+        console.log(err);
+    }
 });
 
 module.exports = router;
+
+//update route
+// router.post('/BandsRegistration', async(req, res) => {
+//     try {
+//         const bandsReg = new Bandsregn(req.body);
+//         console.log(req.body);
+//         // ArtistsReg.profile_photo = req.file.path
+//         await bandsReg.save();
+//         res.render('/list, {artists : artists}');
+//     } catch (err) {
+//         res.status(400).send('something went wrong');
+//         console.log(err);
+//     }
+// });

@@ -3,119 +3,116 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title document 
+    title Document
     link(rel='stylesheet' href='/css/forms.css')
-  body
+  body#artistbody
     h3 Artist Registration Form
-
-    form#ArtistRegform(method ='POST' action='/SoloArtists' name='artistForm' )
-      ul 
-        li
-          label#StageNameID(for='stagename') Stage Name:
-        li
-          input#frm-inner-style(type='text' name='StageName')
-        small
-        li
-          label ArtistID:
-        li
-          input#frm-inner-style(type='text' name='ArtId')
-        li
-          label Password:
-        li
-          input#frm-inner-style(type='text' name='pass')
-        li
-          label Date of Birth:
-        li
-          input#frm-inner-style(type='date' name='DateOfBirth')
-        li
-          label First Name:
-        li
-          input#frm-inner-style(type='text' name='FirstName')
-        li
-          label Last Name:
-        li
-          input#frm-inner-style(type='text' name='LastName')
-        li
-          label NIN Number:
-        li
-          input#frm-inner-style(type='text' name='NIN')
-        li
-          label Profile Photo:
-        li
-          input#image(type='file' name='profile_photo' placeholder='Select a Photo' required='' capture='')
-        li
-          label(for='usergender') Gender :
-          input#msex(type='radio' name='sex' value='male')
-          span Male
-          input#fsex(type='radio' name='sex' value='female')
-          span Female
-          small#genderError
-        li
-          label(for='Artist location') Location:
-        li
-          input#frm-inner-style(type='text' name='location')
-        li
-          label(for='emailAddress')  Email Address:
-        li
-          input#frm-inner-style(type='text' name='email')
-        li
-          label Phone Number:
-        li
-          input#frm-inner-style(type='tel' name='Contact')
-        li
-          label Mangement:
-        li
-          input(type='radio' name='manager' value='Label')
-          label  Under a music label
-          br
-        li
-          input(type='radio' name='manager' value='Manager')
-          label  I have a manager
-          br
-        li
-          input(type='radio' name='manager' value='None')
-          label  i am self managing
-          br
-        li
-          label Label/Manager&apos;s Name:
-        li
-          input#frm-inner-style(type='text' name='Management')
-        li
-          label Date of Start:
-        li
-          input#frm-inner-style(type='date' name='DateOfStart')
-        li
-          label(for='Music category') Music Category:
-        li
-          select#frm-inner-style(name='musicCategory')
-            option(selected='' value='Default')
-            option(value='Kadongo') Kadongo Kamu
-            option(value='DH') Dance Hall
-            option(value='Rg') Raggae
-            option(value='Gospel') Gospel
-            option(value='AH') Afro-House
-            option(value='kidandali') kidandali
-        li
-          label Specify if any other:
-        li
-          input#frm-inner-style(type='text' name='SpecifyCategory')
-        li
-          label Number of Albums:
-        li
-          input#frm-inner-style(type='text' name='NumberOfAlbums')
-        li
-          label Number of Songs:
-        li
-          input#frm-inner-style(type='text' name='NumberOfSongs')
-        
-        li
-          label Number of Awards:
-        li
-          input#frm-inner-style(type='text' name='NumberOfAwards')
-        li
-          label(for='descript') Something About Yourself :
-        li
-          textarea#frm-inner-style(name='descrip')
-        li
-          input(type='submit' value='Submit')
-          input(type='reset' name='reset' value='Reset')
+    form#ArtistRegform(action='/SoloArtists' method='POST' name='soloForm')
+      li
+        label#StageNameID(for='stagename') Stage Name:
+      li
+        input#frm-inner-style(type='text' name='StageName')
+      small
+      li
+        label ArtistID:
+      li
+        input#frm-inner-style(type='text' name='ArtId')
+      li
+        label Password:
+      li
+        input#frm-inner-style(type='text' name='pass')
+      li
+        label Date of Birth:
+      li
+        input#frm-inner-style(type='date' name='DateOfBirth')
+      li
+        label First Name:
+      li
+        input#frm-inner-style(type='text' name='FirstName')
+      li
+        label Last Name:
+      li
+        input#frm-inner-style(type='text' name='LastName' )
+      li
+        label NIN Number:
+      li
+        input#frm-inner-style(type='text' name='NIN')
+      li
+        label Profile Photo:
+      li
+        input#image(type='file' name='profile_photo' placeholder='Select a Photo' required='' capture)
+      li
+        label(for='usergender') Gender :
+        input#msex(type='radio' name='sex' value='male')
+        span Male
+        input#fsex(type='radio' name='sex' value='female')
+        span Female
+        small#genderError
+      li
+        label(for='Artist location') Location:
+      li
+        input#frm-inner-style(type='text' name='location')
+      li
+        label(for='emailAddress')  Email Address:
+      li
+        input#frm-inner-style(type='text' name='Artistemail' )
+      li
+        label Phone Number:
+      li
+        input#frm-inner-style(type='tel' name='Contact')
+      li
+        label Mangement:
+      li
+        input(type='radio' name='manager' value='Label')
+        label  Under a music label
+        br
+      li
+        input(type='radio' name='manager' value='Manager')
+        label  I have a manager
+        br
+      li
+        input(type='radio' name='manager' value='None')
+        label  i am self managing
+        br
+      li
+        label Label/Manager's Name:
+      li
+        input#frm-inner-style(type='text' name='Manager')
+      li
+        label Date of Start:
+      li
+        input#frm-inner-style(type='date' name='DateOfStart')
+      li
+        label(for='Music category') Music Category:
+      li
+        select#frm-inner-style(name='musicCategory')
+          option(selected='' value='Default')
+          option(value='Kadongo') Kadongo Kamu
+          option(value='DH') Dance Hall
+          option(value='Rg') Raggae
+          option(value='Gospel') Gospel
+          option(value='AH') Afro-House
+          option(value='kidandali') kidandali
+      li
+        label Specify if any other:
+      li
+      input#frm-inner-style(type='text' name='SpecifyCategory')
+      li
+        label Number of Albums:
+      li
+        input#frm-inner-style(type='text' name='NumberOfAlbums')
+      li
+        label Number of Songs:
+      li
+        input#frm-inner-style(type='text' name='NumberOfSongs')
+      li
+        label Number of Awards:
+      li
+        input#frm-inner-style(type='text' name='NumberOfAwards')
+      li
+        label(for='descript') Something About Yourself :
+      li
+        textarea#frm-inner-style(name='descrip')
+      li
+        input(type='submit' name='submitbtn') 
+        input(type='reset' name='reset' value='Reset ')
