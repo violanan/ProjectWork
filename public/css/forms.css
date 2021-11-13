@@ -17,7 +17,16 @@ li {
     list-style: none;
 }
 
+#submit-btn {
+    background-color: green;
+}
+
+#reset-btn {
+    background-color: red;
+}
+
 #frm-inner-style {
+    font-weight: bold;
     margin: auto;
     background-color: white;
     border-left: 1px solid black;
@@ -26,40 +35,52 @@ li {
 
 #artistbody {
     width: 80%;
-    background-image: url(/public/images/bg-artist.jpg);
+    background-image: url(/images/bg-artist.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #ArtistRegform {
     background-color: cornflowerblue;
-    width: 40%;
+    width: 60%;
+    position: relative;
+    overflow: auto;
 }
 
 #bandbody {
     width: 80%;
     border-radius: 40%;
-    background-image: url(/public/images/bg-guitre.jpg);
-}
-
-#Bandform {
-    background-color: rgb(226, 168, 43);
-    width: 40%;
-}
-
-#perfbody {
-    background-image: url(/public/images/backgroond.jpeg);
-    background-repeat: no-repeat;
+    background-image: url(/images/bg-guitre.jpg);
     background-size: cover;
 }
 
+#Bandform {
+    background-color: rgb(230, 184, 84);
+    width: 60%;
+    position: relative;
+    overflow: auto;
+}
+
+#perfbody {
+    background-image: url(/images/backgroond.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+}
+
 #peformingRegform {
-    background-color: blueviolet;
-    width: 40%;
+    background-color: rgb(196, 136, 181);
+    width: 60%;
+    position: relative;
+    overflow: auto;
 }
 
 
 /* styling my registration pages */
+
+#regFormbody {
+    background-image: url(/public/images/backgroond.jpeg);
+}
 
 #form-bg {
     background-color: rgb(77, 58, 58);
@@ -84,4 +105,21 @@ li {
     border-top: none;
     border-left: 1px solid black;
     border-bottom: none;
+}
+
+
+/* //dividing form */
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
 }

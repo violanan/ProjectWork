@@ -5,42 +5,47 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title UGAAMUX
     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
-    link(rel='stylesheet' href='/css/bootstrap.rtl.min.css')
+    link(rel='stylesheet' href='/css/bootstrap.min.css')
     link(rel='stylesheet' href='/css/styles.css')
   body
-    div
-      h1.header
-        b UGAAMUX
-        img(src='/images/flag-round.png' width='32px' height='28px')
-      p#welcome-Home
-        b Welcome to the home of Ugandan Art
-    #nav-bar
-      ul
-        li
-          a(href='/') Home
-        li
-          a(href='Solo') Solo Artists
-        li
-          a(href='Bands') Bands
-        // <li><a href="AboutUs">About Us</a></li>
-        li
-          a(href='Performers') Performing Artists
-        li
-          a(href='ContactUs') Contact Us
-
+    .container
+      #header-row.row
+        .col-4
+          h2.header
+            img(src='/images/note.jpg' width='32px' height='32px')
+            i
+              b UgaaMux
+            img(src='/images/flag-round.png' width='32px' height='28px')
+        #nav-bar.col-8
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='Solo') Solo Artists
+            li
+              a(href='Bands') Bands
+            // <li><a href="AboutUs">About Us</a></li>
+            li
+              a(href='Performers') Performing Artists
+            li
+              a(href='ContactUs') Contact Us
     #contactUsCont
-      p The home of your Ugandan Entertainment
-      p Located:
+      p#para1
+        b The home of Ugandan Entertainment
+      br
+      img(src='public/images/fewartists.jpg')
+      p
+        b Located:
         br
         | Namungoona National Housing
       p
-        | Email Us:
+        b  Email Us:
         br
         | ugamax@gmail.com
         br
         | or visit our website on www.ugamux.ug.org
         br
-        | Contacts:
+        b Contacts:
         br
         | +414-784-265-112
         br
@@ -48,29 +53,32 @@ html(lang='en')
         br
         | +256-701-555-018
         br
-    h4 Message us
-    form#ContactUsform(action='/ContactUs' method ='POST' name='contactForm' )
-      li
-        label(for='username') Name:
-        input(type='text' name='username')
-      li
-        label(for='useremail') Email :
-      li
-        input(type='text' name='email' size='15')
-      li
-        label(for='descript') Message :
-      li
-        textarea(name='descrip')
-      br
-      br
-      li
-        input(type='submit' name='submitbtn') 
-        input(type='reset' name='reset' value='Reset ')
-  
-    <div class="footer">
-    <p>
-    The best platiform for all Ugandan Entertainment content, We have you covered!
-    <br /> Email Us On: ugamax@gmail.com<br /> or visit our website on www.ugamux.ug.org
-    </p>
-    </div>
-  script(src='/js/bootstrap.js.map')
+      h4
+        b Message us
+      form
+        li
+          label(for='username')  Name:
+          input(type='text' name='username')
+        li
+          label(for='useremail') Email :
+        li
+          input(type='text' name='email' size='15')
+        li
+          label(for='descript') Message :
+        li
+          textarea(name='descrip')
+        br
+        li
+          input(type='button' name='submitbtn' value='Submit')
+          input(type='reset' name='reset' value='Reset ')
+        br
+        br
+        br
+    .footer
+      p
+        | The best platiform for all Ugandan Entertainment content, We have you covered!
+        br
+        | Email Us On: ugamax@gmail.com
+        br
+        | or visit our website on www.ugamux.ug.org
+    script(src='/js/bootstrap.js.min')

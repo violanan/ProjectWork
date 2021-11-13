@@ -5,70 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UGAAMUX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
 <body>
-    <div>
-        <h1 class="header">
-            <b>UGAAMUX</b>
-            <img src="/images/flag-round.png" width="32px" height="28px" />
-        </h1>
-        <p id="welcome-Home"><b>Welcome to the home of Ugandan Art</b></p>
-    </div>
-    <div id="nav-bar">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="Solo">Solo Artists</a></li>
-            <li><a href="Bands">Bands</a></li>
-            <li><a href="AboutUs">About Us</a></li>
-            <li><a href="Performers">Performing Artists</a></li>
-            <li><a href="ContactUs">Contact Us</a></li>
-        </ul>
-    </div>
+    <div class="container">
+        <div class="row" id="header-row">
+            <div class="col-4">
+                <h2 class="header">
+                    <img src="/images/note.jpg" width="32px" height="32px" />
+                    <i><b>UgaaMux</b></i>
+                    <img src="/images/flag-round.png" width="32px" height="28px" />
+                </h2>
+            </div>
 
-    <div id="contactUsCont">
-        <p id="para1">
-            <b>The home of Ugandan Entertainment</b>
-        </p>
-        <br />
-        <img src="public/images/fewartists.jpg" />
-        <p><b>Located:</b><br />Namungoona National Housing</p>
-        <p>
-            <b> Email Us:</b><br /> ugamax@gmail.com <br /> or visit our website on www.ugamux.ug.org<br />
-            <b>Contacts:</b> <br /> +414-784-265-112 <br /> +256-784-080-18 <br /> +256-701-555-018
+            <div class="col-8" id="nav-bar">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="Solo">Solo Artists</a></li>
+                    <li><a href="Bands">Bands</a></li>
+                    <!-- <li><a href="AboutUs">About Us</a></li> -->
+                    <li><a href="Performers">Performing Artists</a></li>
+                    <li><a href="ContactUs">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contactUsCont">
+            <p id="para1">
+                <b>The home of Ugandan Entertainment</b>
+            </p>
             <br />
-        </p>
-        <h4><b>Message us</b></h4>
-        <form>
-            <li>
-                <label for="username"> Name:</label>
-                <input type="text" name="username" />
-            </li>
+            <img src="public/images/fewartists.jpg" />
+            <p><b>Located:</b><br />Namungoona National Housing</p>
+            <p>
+                <b> Email Us:</b><br /> ugamax@gmail.com <br /> or visit our website on www.ugamux.ug.org<br />
+                <b>Contacts:</b> <br /> +414-784-265-112 <br /> +256-784-080-18 <br /> +256-701-555-018
+                <br />
+            </p>
+            <h4><b>Message us</b></h4>
+            <form>
+                <li>
+                    <label for="username"> Name:</label>
+                    <input type="text" name="username" />
+                </li>
 
-            <li><label for="useremail">Email :</label></li>
-            <li><input type="text" name="email" size="15" /></li>
+                <li><label for="useremail">Email :</label></li>
+                <li><input type="text" name="email" size="15" /></li>
 
-            <li><label for="descript">Message :</label></li>
-            <li><textarea name="descrip"></textarea></li>
-            <br /><br />
+                <li><label for="descript">Message :</label></li>
+                <li><textarea name="descrip"></textarea></li>
+                <br /><br />
 
-            <li>
-                <input type="button" name="submitbtn" value="Submit" />
-                <input type="reset" name="reset" value="Reset " />
-            </li>
-        </form>
-    </div>
+                <li>
+                    <input type="button" name="submitbtn" value="Submit" />
+                    <input type="reset" name="reset" value="Reset " />
+                </li>
+            </form>
+        </div>
 
-    <!-- <div class="footer">
-        <p>
-            The best platiform for all Ugandan Entertainment content, We have you covered!
-            <br /> Email Us On: ugamax@gmail.com<br /> or visit our website on www.ugamux.ug.org
-        </p>
-    </div> -->
+        <div class="footer">
+            <p>
+                The best platiform for all Ugandan Entertainment content, We have you covered!
+                <br /> Email Us On: ugamax@gmail.com<br /> or visit our website on www.ugamux.ug.org
+            </p>
+        </div>
 
-    <script src="/js/bootstrap.js.map"></script>
+        <script src="/js/bootstrap.js.min"></script>
 </body>
 
 </html>

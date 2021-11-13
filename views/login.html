@@ -6,29 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UGAAMUX</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/public/css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
 <body>
-    <div class="header">
-        <h1>UGAA-MUX PLATIFORM</h1>
+    <div class="container">
+        <div class="row" id="header-row">
+            <div class="col-4">
+                <h2 class="header">
+                    <img src="/images/note.jpg" width="32px" height="32px" />
+                    <i><b>UgaaMux</b></i>
+                    <img src="/images/flag-round.png" width="32px" height="28px" />
+                </h2>
+            </div>
 
-        <p>
-            <h4>Welcome!</h4><br />Please login if you alredy have an account</p>
-        <form action="" method="post">
-            <div class="container">
-                <label for="username"><b>Email Address</b></label>
-                <input type="text" placeholder="Username" name="username" required /><br /><br/>
+            <div class="col-8" id="nav-bar">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="Solo">Solo Artists</a></li>
+                    <li><a href="Bands">Bands</a></li>
+                    <!-- <li><a href="AboutUs">About Us</a></li> -->
+                    <li><a href="Performers">Performing Artists</a></li>
+                    <li><a href="ContactUs">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
 
-                <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Password" name="userpass" required /><br /><br/>
+        <div id="login-body">
+            <p>
+                <h4>Welcome!</h4><br />Please login if you alredy have an account</p>
+            <form action="/Registration" method="post">
+                <div class="container">
+                    <label for="Email"><b>Email Address</b></label>
+                    <input type="text" placeholder="Useremail" name="email" required /><br /><br/>
 
-                <a href="Registration">Login</a>
-                <label>
-          
-        </label>
-        </form>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Password" name="passid" required /><br /><br/>
+
+                    <input type="button" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+
+    </div>
 </body>
 
 </html>

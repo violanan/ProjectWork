@@ -38,10 +38,6 @@ const bandSchema = new mongoose.Schema({
         type: String,
         trim: true,
     },
-    icon: {
-        type: String,
-        trim: true,
-    },
     DateOfFormation: {
         type: String,
         trim: true,

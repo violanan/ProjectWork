@@ -11,13 +11,17 @@ const contactRoute = require('./routes/contactRoute');
 const soloRoute = require('./routes/soloRoute');
 const performerRoute = require('./routes/performerRoute');
 const bandRegRoute = require('./routes/bandRegRoute');
+const loginroute = require('./routes/loginroute');
 
-// const ContactUs = require('./models/contactUsModel');
+const ContactUs = require('./models/contactUsModel');
 const Artistsregistration = require('./models/soloArtistModel');
+const Bandsregn = require('./models/bandModel');
+const performingReg = require('./models/performingModel');
+const logins = require('./models/loginModel');
 
 //instatations
 const app = express();
-const port = 3050;
+const port = 3080;
 
 mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
@@ -49,6 +53,7 @@ app.use('/', contactRoute);
 app.use('/', soloRoute); // /registerArtist/SoloArtists
 app.use('/', performerRoute);
 app.use('/', bandRegRoute);
+app.use('/', loginroute);
 
 //routes to static pages
 app.get('/', (req, res) => {
@@ -73,10 +78,7 @@ app.get('/AboutUs', (req, res) => {
     console.log(req.body);
     res.sendFile(__dirname + '/views/aboutUs.html');
 });
-app.get('/Login', (req, res) => {
-    console.log(req.body);
-    res.sendFile(__dirname + '/views/login.html');
-});
+
 app.get('/Registration', (req, res) => {
     console.log(req.body);
     res.sendFile(__dirname + '/views/registrationpages.html');

@@ -6,46 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UGAAMUX</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
 <body>
-    <div>
-        <h1 class="header">
-            <b>UGAAMUX</b>
-            <img src="/images/flag-round.png" width="32px" height="28px" />
-        </h1>
-        <p id="welcome-Home"><b>Welcome to the home of Ugandan Art</b></p>
-    </div>
+    <div class="container">
+        <div class="row" id="header-row">
+            <div class="col-4">
+                <h2 class="header">
+                    <img src="/images/note.jpg" width="32px" height="32px" />
+                    <i><b>UgaaMux</b></i>
+                    <img src="/images/flag-round.png" width="32px" height="28px" />
+                </h2>
+            </div>
 
-    <div id="nav-bar">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="Solo">Solo Artists</a></li>
-            <li><a href="Bands">Bands</a></li>
-            <!-- <li><a href="AboutUs">About Us</a></li> -->
-            <li><a href="Performers">Performing Artists</a></li>
-            <li><a href="ContactUs">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="row">
-        <div class="col">
-            <img src="/images/yamaha.jpg" />
+            <div class="col-8" id="nav-bar">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="Solo">Solo Artists</a></li>
+                    <li><a href="Bands">Bands</a></li>
+                    <!-- <li><a href="AboutUs">About Us</a></li> -->
+                    <li><a href="Performers">Performing Artists</a></li>
+                    <li><a href="ContactUs">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="/images/yamaha.jpg" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <img src="/images/tr.Mpamire.jpg" class="card-img-top" alt="..." width="300px" height="200px" />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="/images/novelistJenniferNansubuga.jpg" class="card-img-top" alt="..." width="300px" height="200px" />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Commedians and Dramatists
+                  </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Poets and novelists
+                  </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Documentary/Content Creators
+                  </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                    though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <img src="/images/prim.jpg" class="card-img-top" alt="..." width="300px" height="200px" />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="/images/nicehenrySongwriter.jpg" class="card-img-top" alt="... " width="300px" height="200px" />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="/images/Alexcommedy.jpg" class="card-img-top" alt="... " width="300px" height="200px" />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="/images/chameleon.jpg " class="card-img-top" alt="... " width="1000px" height="200px" />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                The best platiform for all Ugandan Entertainment content, We have you covered!
+                <br /> Email Us On: ugamax@gmail.com<br /> or visit our website on www.ugamux.ug.org
+            </p>
         </div>
     </div>
-    <div>
-        <div></div>
-    </div>
-
-    <div class="footer">
-        <p>
-            The best platiform for all Ugandan Entertainment content, We have you covered!
-            <br /> Email Us On: ugamax@gmail.com<br /> or visit our website on www.ugamux.ug.org
-        </p>
-    </div>
-
-    <script src="/public/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

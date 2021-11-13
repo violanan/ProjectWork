@@ -27,7 +27,7 @@ router.post(
     async(req, res) => {
         try {
             const soloReg = new Artistsregistration(req.body);
-            // soloReg.profile_photo = req.file.path;
+            soloReg.profile_photo = req.file.path;
             console.log(req.body);
             await soloReg.save();
             res.redirect('/');
@@ -45,7 +45,7 @@ router.get('/artsitList', async(req, res) => {
     try {
         let artists = await Artistsregistration.find();
         if (req.query.StageName) {
-            artists = await Artistsregistration.find({
+            artist = await Artistsregistration.find({
                 StageName: req.query.StageName,
             });
         }

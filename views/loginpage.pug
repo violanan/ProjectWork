@@ -1,0 +1,49 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title UGAAMUX
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='/css/bootstrap.min.css')
+    link(rel='stylesheet' href='/css/styles.css')
+  body
+    .container
+      #header-row.row
+        .col-4
+          h2.header
+            img(src='/images/note.jpg' width='32px' height='32px')
+            i
+              b UgaaMux
+            img(src='/images/flag-round.png' width='32px' height='28px')
+        #nav-bar.col-8
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='Solo') Solo Artists
+            li
+              a(href='Bands') Bands
+            // <li><a href="AboutUs">About Us</a></li>
+            li
+              a(href='Performers') Performing Artists
+            li
+              a(href='ContactUs') Contact Us
+      #login-body
+        p
+          h4 Welcome!
+          br
+          | Please login if you alredy have an account
+        form(action='/loginpage' method='post')
+          .container
+            label(for='Email')
+              b Email Address
+            input(type='text' placeholder='Useremail' name='email' required)
+            br
+            br
+            label(for='password')
+              b Password
+            input(type='password' placeholder='Password' name='passid' required)
+            br
+            br
+            input(type='button' name='submitbtn' value='Submit')

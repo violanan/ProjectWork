@@ -9,19 +9,33 @@ body {
 }
 
 .header {
-    color: black;
-    padding: 10px;
+    font-style: italic;
     text-align: left;
-    background-color: khaki;
-    color: white;
-    height: 50px;
+    background-color: #333;
+    color: rgb(219, 190, 23);
+    height: 70px;
     width: auto;
 }
 
+#header-row {
+    background-color: #333;
+    width: auto;
+}
+
+#card-style {
+    width: fit-content;
+    margin: auto;
+}
+
+#home-side {
+    background-image: url(/images/bg-guitre2.jpg);
+    background-size: cover;
+    height: '300px';
+}
+
 #welcome-Home {
-    background-color: khaki;
     font-style: italic;
-    font-size: x-large;
+    font-size: 40px;
     color: red;
     float: none;
 }
@@ -36,7 +50,7 @@ body {
     background-color: #333;
     height: 70px;
     text-align: center;
-    width: 100%;
+    width: 66%;
     /* position: fixed; */
     /* z-index: 1;
     top: 0;
@@ -51,7 +65,7 @@ body {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 10px;
     text-decoration: none;
     font-size: 15px;
 }
@@ -115,10 +129,9 @@ li {
 /* contactus.html */
 
 #contactUsCont {
-    background-image: url('/images/fewartists.jpg');
+    width: auto;
+    background-color: rgb(226, 168, 43);
     background-repeat: no-repeat;
-    background-position-x: 90%;
-    background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
     text-decoration-color: chartreuse;
@@ -139,3 +152,14 @@ li {
     width: auto;
     align-items: center;
 } */
+
+
+/* login page */
+
+#login-body {
+    width: auto;
+    height: 500px;
+    background-image: url('/images/mic.jpg');
+    background-size: cover;
+    padding: 0px;
+}
