@@ -15,35 +15,50 @@
         <div class="row">
             <div class="column">
 
-                <li><label for="stagename" id="StageNameID">Stage Name:</label></li>
-                <li><input type="text" name="StageName" id="frm-inner-style" /></li>
-                <small></small>
+                <li><label for="stagename" id="StageNameID">Stage Name:</label><br/><br/>
+                    <input type="text" name="StageName" id="frm-inner-style" />
+                    <small id="stageNameError"></small></li>
 
-                <li><label>ArtistID:</label></li>
-                <li><input type="text" name="ArtId" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>ArtistID:</label></li>
+                    <li><input type="text" name="ArtId" id="frm-inner-style" /></li>
+                    <small id="
+                    "></small>
+                </li>
 
-                <li><label>Password:</label></li>
-                <li><input type="text" name="pass" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>Password:</label></li>
+                    <li><input type="text" name="pass" id="frm-inner-style" /></li>
+                    <small id="passError"></small></li>
 
-                <li><label>Date of Birth:</label></li>
-                <li><input type="date" name="DateOfBirth" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>Date of Birth:</label></li>
+                    <li><input type="date" name="DateOfBirth" id="frm-inner-style" /></li>
+                    <small id="DOBError"></small></li>
 
-                <li><label>First Name:</label></li>
-                <li><input type="text" name="FirstName" id="frm-inner-style" /></li>
 
-                <li><label>Last Name:</label></li>
-                <li><input type="text" name="LastName" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>First Name:</label></li>
+                    <li><input type="text" name="FirstName" id="frm-inner-style" /></li>
+                    <small id="FNError"></small></li>
 
-                <li><label>NIN Number:</label></li>
-                <li><input type="text" name="NIN" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>Last Name:</label></li>
+                    <li><input type="text" name="LastName" id="frm-inner-style" /></li>
+                    <small id="LNError"></small></li>
+
+                <li>
+                    <li><label>NIN Number:</label></li>
+                    <li><input type="text" name="NIN" id="frm-inner-style" /></li>
+                    <small id="NINError"></small></li>
 
                 <li><label>Profile Photo:</label></li>
                 <li><input id="image" type="file" name="profile_photo" placeholder="Select a Photo" required="" capture></li>
 
                 <li>
-                    <label for="usergender">Gender :</label>
+                    <label for="usergender">Gender :</label><br/><br/>
                     <input type="radio" id="msex" name="sex" value="male" /><span>Male</span
-                >
+                ><br>
 
                 <input type="radio" id="fsex" name="sex" value="female" /><span
                     >Female</span
@@ -51,32 +66,41 @@
                 <small id="genderError"></small>
                 </li>
                 
-                <li><label for="Artist location">Location:</label></li>
+                <li><li><label for="Artist location">Location:</label></li>
                 <li><input type="text" name="location" id="frm-inner-style" /></li>
+                <small id="locationError"></small></li>
 
-                <li><label for="emailAddress"> Email Address:</label></li>
+                <li><li><label for="emailAddress"> Email Address:</label></li>
                 <li><input type="text" name="Artistemail" id="frm-inner-style" /></li>
+                <small id="emailError"></small></li>
 
                 <li><label>Phone Number:</label></li>
                 <li><input type="tel" name="Contact" id="frm-inner-style" /></li>
+                <small id="contactError"></small></li>
             </div>
 
             <div class="column">
 
-                <li><label>Mangement:</label></li>
+                <li><label>Mangement:</label>
                 
-                <li><input type="checkbox"  name="management1" value="Label">
+                <li><input type="radio"  name="management1" value="Label">
                 <label > Under a music label</label><br></li>
-                <li><input type="checkbox"  name="management2" value="Manager">
+                <li><input type="radio"  name="management2" value="Manager">
                 <label > I have a manager</label><br></li>
-                <li><input type="checkbox"  name="management3" value="None">
+                <li><input type="radio"  name="management3" value="None">
                 <label > i am self managing</label><br></li>
+                <span id="managementError"></span>
+                </li>
 
-                <li><label>Label/Manager's Name:</label></li>
-                <li><input type="text" name="Manager" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>Label/Manager's Name:</label></li>
+                    <li><input type="text" name="Manager" id="frm-inner-style" /></li>
+                    <small id="managerError"></small></li>
 
-                <li><label>Date of Start:</label></li>
-                <li><input type="date" name="DateOfStart" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>Date of Start:</label></li>
+                    <li><input type="date" name="DateOfStart" id="frm-inner-style" /></li>
+                    <small id="DOSError"></small></li>
 
                 <li><label for="Music category">Music Category:</label></li>
                 <li>
@@ -89,32 +113,46 @@
                         <option value="Gospel">Gospel</option>
                         <option value="AH">Afro-House</option>
                         <option value="kidandali">kidandali</option>
+                        <small id="musicatError"></small>
                     </select></li>
 
-                <li><label>Specify if any other:</label></li>
-                <li></li><input type="text" name="SpecifyCategory" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>Specify if any other:</label></li>
+                    <li></li><input type="text" name="SpecifyCategory" id="frm-inner-style" /></li>
+                <small id="specifycatError"></small></li>
 
-                <li><label>Number of Albums:</label></li>
-                <li><input type="text" name="NumberOfAlbums" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>Number of Albums:</label></li>
+                    <li><input type="text" name="NumberOfAlbums" id="frm-inner-style" /></li>
+                    <small id="NoAlbumsError"></small></li>
 
-                <li><label>Number of Songs:</label></li>
-                <li><input type="text" name="NumberOfSongs" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>Number of Songs:</label></li>
+                    <li><input type="text" name="NumberOfSongs" id="frm-inner-style" /></li>
+                    <small id="NosongsError"></small></li>
 
-                <li><label>Number of Awards:</label></li>
-                <li><input type="text" name="NumberOfAwards" id="frm-inner-style" /></li>
+                <li>
+                    <li><label>Number of Awards:</label></li>
+                    <li><input type="text" name="NumberOfAwards" id="frm-inner-style" /></li>
+                    <small id="NoAwardsError"></small></li>
 
-                <li><label for="descript">Something About Yourself :</label></li>
-                <li><textarea name="descrip" id="frm-inner-style"></textarea></li>
+
+                <li>
+                    <li><label for="descript">Something About Yourself :</label></li>
+                    <li><textarea name="descrip" id="frm-inner-style"></textarea></li>
+                    <small id="descriptionError"></small></li>
+
 
 
                 <li>
                     <input type="button" name="submitbtn" value="Submit" />
                     <input type="reset" name="reset" value="Reset " />
                 </li>
-            </div>  
-        </div>  
+            </div>
+        </div>
 
     </form>
+    <script src="/public/js/validateArtistregForm.js"></script>
 </body>
 
 </html>

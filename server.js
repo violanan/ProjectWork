@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 
 const mongoose = require('mongoose');
-// const expressSession = require
+const expressSession = require;
 
 require('dotenv').config();
 
@@ -79,7 +79,7 @@ app.get('/AboutUs', (req, res) => {
     res.sendFile(__dirname + '/views/aboutUs.html');
 });
 
-app.get('/Registration', (req, res) => {
+app.get('/Register', (req, res) => {
     console.log(req.body);
     res.sendFile(__dirname + '/views/registrationpages.html');
 });

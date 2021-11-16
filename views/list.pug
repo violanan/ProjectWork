@@ -11,7 +11,7 @@ html
                 div.card-body
                     block conten
         header.card-header
-            h4.card-title Welcome
+            h4.card-title Welcome to the dashboard
             //- h4.card-title Welcome
             |&nbsp
         div.form-row
@@ -59,51 +59,51 @@ html
                                 button.btn.btn-dark.btn-block(type="submit") Delete
                 else 
                     p No registrations yet :(
-        div.form-row
-            div.col.form-group.col-md-12    
-                form.search(action='/artsitList')
-                    div.form-row
-                        div.col-md-8
-                            input.form-control(name='StageName' placeholder="Enter stagename")
-                        div.col-md-4
-                            input.btn.btn-dark.btn-block(type="submit")
-        table.table
-            thead.thead-dark
-                tr
-                    th Bandname
-                    th BandSlogan
-                    th Email
-                    //- th Gender
-                    //- th Country
-                    //- th Numbers
-                    //- th City
-                    th Image
-                    th
-                    th
-            tbody
-                if bands.length
-                each band in bands
-                    tr
-                        td #{band.BandName}
-                        td #{band.BandSlogan}
-                        td #{band.Bandemail}
-                        //- td #{user.gender}
-                        //- td #{user.country}
-                        //- td #{user.numbers}
-                        //- td #{user.city}
-                        td 
-                            //- img(src=`/img/#{user.imageupload}`)
-                            //- img(src=`/img/${user.imageupload}` alt="image" style="width:20%; margin:5px auto;")
-                            img(src='/'+band.profile_photo alt="image" width="150px" height="170px")
+        //- div.form-row
+        //-     div.col.form-group.col-md-12    
+        //-         form.search(action='/artsitList')
+        //-             div.form-row
+        //-                 div.col-md-8
+        //-                     input.form-control(name='StageName' placeholder="Enter stagename")
+        //-                 div.col-md-4
+        //-                     input.btn.btn-dark.btn-block(type="submit")
+        //- table.table
+        //-     thead.thead-dark
+        //-         tr
+        //-             th Bandname
+        //-             th BandSlogan
+        //-             th Email
+        //-             //- th Gender
+        //-             //- th Country
+        //-             //- th Numbers
+        //-             //- th City
+        //-             th Image
+        //-             th
+        //-             th
+        //-     tbody
+        //-         if artists.length
+        //-         each artist in artists
+        //-             tr
+        //-                 td #{band.BandName}
+        //-                 td #{band.BandSlogan}
+        //-                 td #{band.Bandemail}
+        //-                 //- td #{user.gender}
+        //-                 //- td #{user.country}
+        //-                 //- td #{user.numbers}
+        //-                 //- td #{user.city}
+        //-                 td 
+        //-                     //- img(src=`/img/#{user.imageupload}`)
+        //-                     //- img(src=`/img/${user.imageupload}` alt="image" style="width:20%; margin:5px auto;")
+        //-                     img(src='/'+band.profile_photo alt="image" width="150px" height="170px")
                         
-                        td
-                            a(href='/update/'+artist._id) Update
-                        td
-                            form(method="post" action='/delete')
-                                input(type="hidden", placeholder="", name="id", value=artist._id)
-                                button.btn.btn-dark.btn-block(type="submit") Delete
-                else 
-                    p No registrations yet :(      
+        //-                 td
+        //-                     a(href='/update/'+artist._id) Update
+        //-                 td
+        //-                     form(method="post" action='/delete')
+        //-                         input(type="hidden", placeholder="", name="id", value=artist._id)
+        //-                         button.btn.btn-dark.btn-block(type="submit") Delete
+        //-         else 
+        //-             p No registrations yet :(      
         div.form-row
                 div.col-md-2.offset-9
                     form(method="post" action='/logout') 

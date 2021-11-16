@@ -11,11 +11,11 @@ router.get('/loginpage', (req, res) => {
 });
 
 router.post('/loginpage', async(req, res) => {
-    console.log(req.body);
     try {
         const logn = new logins(req.body);
+        console.log(req.body);
         await logn.save();
-        res.redirect('/Registration');
+        res.redirect('/register');
     } catch (err) {
         res.status(400).send('something went wrong');
         console.log(err);

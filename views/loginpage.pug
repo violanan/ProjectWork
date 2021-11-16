@@ -7,6 +7,8 @@ html(lang='en')
     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel='stylesheet' href='/css/bootstrap.min.css')
     link(rel='stylesheet' href='/css/styles.css')
+    
+    
   body
     .container
       #header-row.row
@@ -37,13 +39,15 @@ html(lang='en')
         form(action='/loginpage' method='post')
           .container
             label(for='Email')
-              b Email Address
+              b EmailAddress
             input(type='text' placeholder='Useremail' name='email' required)
             br
             br
             label(for='password')
-              b Password
+              b Password  
             input(type='password' placeholder='Password' name='passid' required)
             br
             br
-            input(type='button' name='submitbtn' value='Submit')
+            a(href='/') ← Back    
+  
+            input#submit-btn(type='submit' name='submitbtn' value='Submit')

@@ -31,7 +31,7 @@ router.post(
             bandsReg.profile_photo = req.file.path;
             console.log(req.body);
             await bandsReg.save();
-            res.redirect('/');
+            res.redirect('/Register');
         } catch (err) {
             res.status(400).send('something went wrong');
             console.log(err);
