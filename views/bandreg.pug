@@ -3,62 +3,81 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title document 
+    title Document
     link(rel='stylesheet' href='/css/forms.css')
   body#bandbody
-    h2 Band Registration Form
-    form#Bandform(action='/BandsRegistration' method ='POST', enctype="multipart/form-data" name='bandForm')
-      .row
+    h3 Band Form
+    form#Bandform(action='/BandsRegistration' method='POST' , enctype='multipart/form-data' name='register1')
+     .row
       .column
         li
-          label(for='bdname') Band Name:
+          li
+            label(for='bdname') Band Name:
+          li
+            input#frm-inner-style(type='text' name='BandName')
+          small#BNError
         li
-          input#frm-inner-style(type='text' name='BandName')
+          li
+            label(for='bdid') BandID:
+          li
+            input#frm-inner-style(type='text' name='BandId')
+          small#IDError
         li
-          label(for='bdid') BandID:
+          li
+            label(for='') Band Password:
+          li
+            input#frm-inner-style(type='text' name='passid')
+          small#passError
         li
-          input#frm-inner-style(type='text' name='BandId')
+          li
+            label(for='BandSlogan') Band Slogan:
+          li
+            input#frm-inner-style(type='text' name='BandSlogan')
+          small#BSError
         li
-          label(for='') Band Password:
+          li
+            label(for='BandOwner') Band Owner(s):
+          li
+            input#frm-inner-style(type='text' name='BandOwner')
+          small#BOwnerError
         li
-          input#frm-inner-style(type='text' name='passid')
+          li
+            label(for='BandHome') Band Home:
+          li
+            input#frm-inner-style(type='text' name='BandHome')
+          small#BHError
         li
-          label(for='BandSlogan') Band Slogan:
+          li
+            label(for='members') Number of members:
+          li
+            input#frm-inner-style(type='text' name='members')
+          small#memError
         li
-          input#frm-inner-style(type='text' name='BandSlogan')
+          li
+            label(for='Bandemail')  Band Email :
+          li
+            input#frm-inner-style(type='text' name='Bandemail')
+          small#emailError
+      .column 
         li
-          label(for='BandOwner') Band Owner(s):
+          li
+            label Band Contact:
+          li
+            input#frm-inner-style(type='tel' name='BandContact')
+          small#BandContError
+        //
+          <li><label>Profile Photo:</label></li>
+          <li><input id="image" type="file" name="profile_photo" placeholder="Select a Photo" required="" capture></li>
         li
-          input#frm-inner-style(type='text' name='BandOwner')
+          label Band Icon:
         li
-          label(for='BandHome') Band Home:
+          input#image(type='file' name='profile_photo' placeholder='Select a Photo' required='' capture)
         li
-          input#frm-inner-style(type='text' name='BandHome' )
-        li
-          label(for='members') Number of members:
-        li
-          input#frm-inner-style(type='text' name='members')
-        li
-          label(for='Bandemail')  Band Email :
-        li
-          input#frm-inner-style(type='text' name='Bandemail')
-      .column  
-        li
-          label Band Contact:
-        li
-          input#frm-inner-style(type='tel' name='BandContact')
-        //- li
-        //-   label Profile Photo:
-        //- li
-        //-   input#image(type='file' name='profile_photo' placeholder='Select a Photo' required='' capture='')
-        li
-          label Band Photo / Icon:
-        li
-          input#image(type='file' name='profile_photo' placeholder='Select a Photo' required='' capture='')
-        li
-          label Date of formation:
-        li
-          input#frm-inner-style(type='date' name='DateOfFormation')
+          li
+            label Date of formation:
+          li
+            input#frm-inner-style(type='date' name='DateOfFormation')
+          small#DOFError
         li
           label(for='Music category') Music Category:
         li
@@ -71,17 +90,22 @@ html(lang='en')
             option(value='AH') Afro-House
             option(value='kidandali') kidandali
         li
-          label Specify if any other:
+          li
+            label Specify if any other:
+          li
+          input#frm-inner-style(type='text' name='SpecifyCategory')
+        small#specifycatError
         li
-        input#frm-inner-style(type='text' name='SpecifyCategory')
-        li
-          label Number of Albums:
-        li
-          input#frm-inner-style(type='text' name='NumberOfAlbums')
+          li
+            label Number of Albums:
+          li
+            input#frm-inner-style(type='text' name='NumberOfAlbums')
+          small#NoAlbumsError
         li
           label(for='descript') Band Desciption :
         li
           textarea#frm-inner-style(name='descrip')
         li
-          input#submit-btn(type='submit' name='submitbtn')
+          input#submit-btn(onclick='validate()' type='button' name='submitbtn' value='submit')
           input#reset-btn(type='reset' name='reset' value='Reset ')
+      script(src='/js/validateBandreg.js')

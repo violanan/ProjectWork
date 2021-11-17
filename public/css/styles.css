@@ -8,6 +8,11 @@ body {
     padding: 20px;
 }
 
+#overall {
+    background-image: url(/public/images/africa.jpg);
+    background-size: cover;
+}
+
 .header {
     font-style: italic;
     text-align: left;
@@ -44,6 +49,7 @@ body {
     background-image: url('/images/piano.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    width: auto;
 }
 
 #nav-bar {

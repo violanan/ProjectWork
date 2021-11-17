@@ -21,7 +21,7 @@ const logins = require('./models/loginModel');
 
 //instatations
 const app = express();
-const port = 3080;
+const port = 3060;
 
 mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,

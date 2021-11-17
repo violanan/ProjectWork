@@ -11,7 +11,7 @@
 <body>
     <h3>Artist Registration Form</h3>
 
-    <form action="" id="ArtistRegform">
+    <form action="/SoloArtists" method='POST' , enctype="multipart/form-data" id="ArtistRegform" name="register">
         <div class="row">
             <div class="column">
 
@@ -22,8 +22,7 @@
                 <li>
                     <li><label>ArtistID:</label></li>
                     <li><input type="text" name="ArtId" id="frm-inner-style" /></li>
-                    <small id="
-                    "></small>
+                    <small id="IDError"></small>
                 </li>
 
                 <li>
@@ -145,7 +144,7 @@
 
 
                 <li>
-                    <input type="button" name="submitbtn" value="Submit" />
+                    <input onclick="validate()" type="submit" name="submitbtn" value="Submit" />
                     <input type="reset" name="reset" value="Reset " />
                 </li>
             </div>
@@ -153,6 +152,7 @@
 
     </form>
     <script src="/public/js/validateArtistregForm.js"></script>
+    <script src="/public/js/bootstrap.js"></script>
 </body>
 
 </html>
